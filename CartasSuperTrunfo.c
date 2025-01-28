@@ -13,22 +13,27 @@ int main() {
     float area;
     int pib;
     int n_pontos_turisticos;
-
+    float D_populacional;  
+    float pib_p_capita;    
 
     printf("Entre aqui com a populacao da cidade\n");
     scanf("%d", &populacao);
-    printf("Entre aqui com a area da cidade\n");
+    printf("Entre aqui com a area da cidade:\n");
     scanf("%f", &area);
-    printf("Entre aqui com o pib da cidade\n");
+    printf("Entre aqui com o pib da cidade:\n");
     scanf("%d", &pib);
-    printf("Entre aqui com o numero de pontos turisticos da cidade\n");
+    printf("Entre aqui com o numero de pontos turisticos da cidade:\n");
     scanf("%d", &n_pontos_turisticos);
 
+    D_populacional = populacao / area;
+    pib_p_capita = (float)pib / populacao;
 
     printf("Populacao total: %d\n", populacao);
     printf("Área total: %.2f\n", area);
     printf("Pib da cidade: %d\n", pib);
     printf("Numero de pontos turisticos: %d\n", n_pontos_turisticos);
+    printf("Numero da Densidade Populacional: %.2f\n", D_populacional);
+    printf("Pib per Capita: %.2f\n", pib_p_capita);
     
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
